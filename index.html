@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet">
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body class="min-h-screen grid place-items-center">
+
+  <main class="mx-4 md:mx-2 md:grid md:grid-cols-3 md:gap-x-5">
+    <section class="bg-[#1d2c67] p-9 md:p-7 rounded-b-xl rounded-tl-xl rounded-tr-[6rem] mb-4 md:mb-0 md:grid md:col-span-1">
+      <img class="mb-10 md:mb-6" src="images/logo.svg" alt="" />
+      <div class="flex gap-x-4 md:gap-x-2 md:mr-14">
+        <button class="bg-[#0c122c] py-3 px-[.9rem] rounded-lg"><img src="images/icon-document.svg" alt=""></button>
+        <button class="bg-[#0c122c] p-3 rounded-lg"><img src="images/icon-folder.svg" alt=""></button>
+        <button class="bg-[#0c122c] p-3 rounded-lg"><img src="images/icon-upload.svg" alt=""></button>
+      </div>
+    </section>
+
+    <section class="bg-[#1d2c67] px-7 pt-8 pb-12 md:pb-6 md:mt-8 rounded-xl relative md:grid md:col-span-2">
+      <div>
+          <div class="flex">
+            <p class="text-[#dddbff] mb-3 font-medium">You’ve used</p>
+            <div class="text-white font-semibold w-[4.5rem] flex justify-center" id="usedGB"></div>
+            <p class="text-[#dddbff] mb-3 font-medium"> of your storage</p>
+          </div>
+        <label for="range"></label>
+        <input id="range" name="range" type="range" min="0" max="1000" value="500"
+        class="w-full"/>
+        <div class="flex justify-between text-sm text-white font-medium">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+      <div class="hidden md:block absolute border-l-[2.1rem] border-l-solid border-l-transparent border-t-[2rem] border-t-solid border-t-white left-[90%] bottom-[65%]"></div>
+      <div class="w-[12rem] h-[4rem] bg-white absolute py-4 px-4 rounded-xl flex items-center justify-between left-[20%] bottom-[-23%] md:left-[62%] md:bottom-[80%]">
+        <p class="text-4xl font-extrabold flex w-3/5 " id="gbLeft"></p>
+        <p class="text-xs font-semibold flex w-2/5 text-slate-500 tracking-widest">GB LEFT</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fixed bottom-0 text-center text-white text-xs pb-2">
+    <p>Challenge by <a class="font-bold hover:text-blue-400" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="font-bold hover:text-blue-400" href="https://github.com/VickyAzola/ResponsiveInputRange" target="_blank">Victoria Azola</a>.
+    </p>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
