@@ -5,6 +5,6 @@ Este es un proyecto realizado en base al desafío de Frontend Mentor que puedes 
 https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
 
 Aqui puedes ver el producto final:
-
+https://interactive-inputrange-tailwind-js.netlify.app/
 
 ![desktop-preview](https://github.com/VickyAzola/ResponsiveInputRange/assets/116470398/e4830411-1869-4e08-9120-f3890a5dfa63)
